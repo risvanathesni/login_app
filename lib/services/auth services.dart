@@ -50,7 +50,7 @@ Future<void> login({
 
 Future<void> sendlink({
   required String email,
-  required BuildContext context,
+  required BuildContext context ,
 }) async {
   try {
     await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
